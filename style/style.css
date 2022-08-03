@@ -1,0 +1,249 @@
+#cabecera {
+
+    background-image: url("../images/index/My\ project\ 1.jpg");
+    background-size:cover;
+    height: 100px;
+    
+}
+
+#cabecera h1 {
+    margin-bottom: 2px;
+    text-align: left;
+    padding-top: 60px;
+    font-style: oblique;
+    font-family: fantasy;
+    font-size: 23px;
+    color: #29a718;
+    
+}
+
+#menu {
+    text-decoration: none;
+    width: 320px;
+}
+
+#menu ul {
+    float: right;
+    align-items: center;
+    list-style-type: none;
+   
+  
+}
+ 
+#menu ul li {
+    display: inline;
+   
+    
+}
+
+
+#menu ul li a {
+    text-decoration: none;
+    padding: 5px;
+	border: #b90633 solid 2px;
+    color: rgb(230, 136, 136);
+	font-family:fantasy ;
+    font-size: 10px;
+    width: 50px;
+    
+
+}
+
+#menu ul li a:hover {
+    color: #b90633;
+    background-color: #29a718;
+  
+}
+
+
+#section {
+
+    grid-template-columns: repeat (3 1fr);
+    height: auto;
+    width: auto;
+    padding: 15px;
+    color: black;
+    }
+    
+
+.tipo {
+
+    background: #ccc;
+    border: 2px solid rgb(223, 11, 11);
+    display: inline-flexbox;
+    justify-items: auto;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    transition: transform 5s;
+       
+}
+
+.tipo:hover {
+    transform: scale(0.9);
+  }
+
+  .tipos__img1 {
+       
+       margin-left:25px;
+  }
+  
+ .tipos__img1  img {
+    width: 250px;
+   
+
+       
+   }
+
+  .tipos__h3{
+    padding-left: 5px;
+    text-align:center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+  } 
+
+  .tipos__p {
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    margin: 10px;
+
+  }
+  .tipos__hr {border: 3px solid rgb(177, 79, 79); 
+              border-radius: 500px/50px;
+              height: 10px; 
+              text-align: center;}
+
+ 
+.comentarios {
+    grid-area: comentarios;
+    display: grid;
+    grid-template-rows: repeat(3 1,5fr);
+    grid-gap: 20px;
+    padding: 10px;
+    color: black;
+    margin-bottom: 20px;
+    
+    
+}   
+
+aside h2 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align:center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    background: #a58483;
+    border-radius: 60px;
+}
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        color: #e96f0a;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+.testimonio__personas{
+    border:dotted ;
+    color: rgb(233, 58, 14);
+    padding: 10px;
+     text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    animation-duration: 7s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    
+              
+}
+
+
+#footer {
+        
+     margin: 1px;
+     padding: 2px;
+     display: inline;;
+}
+
+#footer__left{
+
+    float:right;
+    padding-left: 5px;
+    margin-left:20px;
+    text-align:justify;
+   
+    
+   
+}
+#footer__left h3{ 
+    color: rgb(12, 12, 12);
+    ;
+    font-size: 20px;
+}
+
+#footer__left p{
+    font-style: italic;
+    font-size: 10px;
+    margin: 2px;
+    color:rgb(2, 2, 2);
+
+}
+
+/*Comienzo Medios de Pago*/
+
+
+
+#footer__center h3{
+    color:rgb(2, 2, 2);
+    float: right;
+    font-size: 20px; 
+}
+
+.center__img{
+    width: 150px;
+    height: 90px;
+    margin: 5px;
+    float: right;
+    transition: transform 3s;
+}
+
+.center__img:hover {
+    transform: scale(1.15);
+}
+
+/*Comienzo Redes sociales*/
+
+#footer__right{
+    height: 100%;
+    width: 17%;
+    float: left;
+    }
+
+#footer__right h3 {
+    color:rgb(2, 2, 2);
+    font-size: 20px;
+    color: #29a718;
+}
+.right__img{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    float: right;
+    transition: transform 5s;
+}
+
+.right__img:hover{
+    transform: translate(15px, 15px);
+
+
+}
