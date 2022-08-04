@@ -2,29 +2,43 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Denis Bike Shop</title>
-</head>
-<body id="body">
-<!--Inicio del header y nav-->
-    <header class="header">
-        <h1 class=".header__tittle">DENIS BIKE SHOP</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style/style.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>Denis Bikeshop</title>
+    </head>
+    <body id="body">
+        <div class="container">
+            <div class="row">
+                <header id="cabecera" class="col-12">
+                    <h1>DENIS BIKE SHOP</h1>
+                </header>
+            </div>
+    
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/pages/service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/bicicletas.html">Bicicletas</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+    
+                </ul>
 
-    </header>
-    <nav id="menuH">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/bicicletas.html">Bicicletas</a></li>
-            <li><a href="../pages/service.html">Service</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-        
-    </nav>
 
 <!--Inicio Formulario-->
     <div id="bloque__contacto" >
@@ -51,7 +65,51 @@
            </p>
 
         </div>
-   
+
+
+ <!-- apertura form + img-->
+ <div class="row paddingTB">
+    <div class="col-lg-6 col-xs-12 paddingLR" data-aos="fade-up">
+        <h3>Formulario de contacto</h3>
+        <hr>
+        <form>
+           <div class="form-group">
+            <label for=”name”>Apellido/Nombre:<span class=”required”>*</span></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido/Nombre">
+           </div>
+            <div class="form-group">
+            <label for="email">Email:<span class="required">*</span></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for=”tel”>Tel/Cel: <span class=”required”>*</span></label>
+            <input type="Telefono" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese Telefono">
+          </div>
+
+          <div class="form-group">
+            <label for=”via”>Via de Contacto:<span class="required">*</span> </label> 
+                <select id=”enquiry” name=”via”>
+                    <option value="sel"></option>
+                    <option value=”em”>Email</option>
+                    <option value=”tel”>Tel/Celular</option>
+                    </select>
+        <br><br>
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+    </div>
+    <div class="col-lg-6 col-xs-12 paddingLR" data-aos="fade-up">
+        <br>
+       <button class="submit"
+       type="submit">Enviar</button> 
+    </div>
+</div>
+<!-- cierre form -->
+   <!--
         <section id="contact__form">
           <h2 class="contact__form__h2"> Contactenos</h2>
           <p class="contact__form__p">Jacinto Rios 321</p>    
@@ -103,35 +161,55 @@
         </section>
 
 </div>
-      
+ -->     
       
 <!-- inicio de footer --> 
-          <footer id="footer">
-        
-            <div id="footer__left">
-                <h3>Cóntactenos!</h3>
-                        <p>Direccion:Jacinto Rios 321<br>
-                           Ciudad:Córdoba<br>
-                           CP:5000<br>
-                           Tel:035145565656<br>
-                           Fax: 156532322<br>
-                           Email: denisbikeshop@hotmail.com</p>
-        </div>
-    
-            <div id="footer__center">
-                <h3>Medios de Pago</h3>
-                <img src="../images/index/Medios de pago.jpg" class="center__img" alt="medios de pago">
-    
-            </div>
-    
-            <div id="footer__right">
-                <h3>Redes Sociales</h3>
-                <img src="../images/index/Redes Sociales.jpg" class="right__img" alt="">
-            </div>
-    
-           
-        </footer>
 
+<div class="container my-5">
+
+    <footer style="background-color: #deded5;">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4" class="footer__contact">
+              <h5 class="mb-3"  style="letter-spacing: 2px; color: #818963;">Contactenos</h5>
+              <p class="footer__text">Direccion:Jacinto Rios 321<br>
+                Ciudad:Córdoba<br>
+                CP:5000<br>
+                Tel:035145565656<br>
+                Fax: 156532322<br>
+                Email: denisbikeshop@hotmail.com</p>
+                
+             </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Medios de Pago</h5>
+              <img src="../images/index/Medios de pago.jpg" class="center__img" alt="medios de pago">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Redes Sociales</h5>
+              <img src="../images/index/Redes Sociales 2.PNG" class="right__img" alt="">
+             </div>
+          </div>
+        </div>
+    </footer>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/JQuery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-
