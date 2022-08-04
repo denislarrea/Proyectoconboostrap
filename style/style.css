@@ -324,4 +324,100 @@ list-style-type: none;
 
 /*fin stylo pag Servicios*/
 
-/*inicio stylo pag bicicletas*/
+/*inicio stylo pag contacto
+Mismo formato header- footer- nav
+*/
+
+
+/* Horarios y mensaje*/
+.bloque__lista__h2 {
+    font-family:serif;
+    font-size: 40px;
+    color: #7C081A;
+    text-decoration: underline;
+}
+.bloque__lista__p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin-top: 5px;
+    color: #7C081A;
+    padding-bottom: 10px;
+}
+
+/*
+.bloque__lista {
+
+    background-color: #B3996E;
+    width: 25%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 55px;
+    text-align: center;
+    
+    
+}
+
+.bloque__lista__h2 {
+    font-family:serif;
+    font-size: 40px;
+    color: #7C081A;
+    text-decoration: underline;
+}
+
+.bloque__lista__p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin-top: 5px;
+    color: #7C081A;
+    padding-bottom: 10px;
+}
+
+.bloque__lista__hr {
+            border: 3px solid rgb(177, 79, 79); 
+            border-radius: 300px/10px;
+            height: 0px; 
+            text-align: center;
+            margin-top: 15px;
+           
+    }
+
+*/
+
+/* Formulario*/
+
+#bloque__contacto {
+    text-align: center;
+
+}
+.row  {
+    display: flexbox;
+    justify-content:space-around ;
+}
+
+
+/*Boton enviar*/
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    display: unset;
+}
+
+
+button.submit { 
+    padding: 9px 17px;
+    font-family: sans-serif;
+    font-weight: bold; line-height: 1.5; color:black;
+    border: none; text-shadow: 0 5px 5px
+    rgba(25, 25, 25, 0.5);
+    background-image: -moz-linear-gradient(0%
+    100% 90deg, #222, #222);
+    background-color: #fff; border: 1px solid
+    #f1f1f1;
+    border-radius: 10px; box-shadow: 0 1px 2px
+    rgba(0, 0, 0, 0.5);}
+    button.submit:hover { opacity:.80; cursor:pointer; color: #fff; }
+    button.submit:active { border: 1px solid
+    #222;
+    box-shadow: 0 0 10px 5px #444 inset;
+   }
