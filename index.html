@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <title>Denis Bikeshop</title>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <div class="row">
             <header id="cabecera" class="col-12">
                 <h1>DENIS BIKE SHOP</h1>
             </header>
         </div>
-        <div class="row">
-            <nav id="menu" class="col-12">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/bicicletas.html">Bicicletas</a></li>
-                    <li><a href="pages/service.html">Service</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/pages/service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/bicicletas.html">Bicicletas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+
         <section id="section">
             <div  class="tipo" >
                 <div class="tipos__img1">
@@ -60,7 +71,7 @@
 
         <aside class="comentarios">
             <h2>Testimonios</h2>
-            <div class="testimonio__personas" ><p>La calidad es indiscutible, el mejor mecánico de bicis de Córdoba, por lejos!
+            <div class="testimonio__personas" ><p class="lead">La calidad es indiscutible, el mejor mecánico de bicis de Córdoba, por lejos!
                 <br>
                 <br>   
                - Juan A.</p>
@@ -79,34 +90,37 @@
            </div>
         </aside>
 
-        <footer id="footer" class="col-12"> 
 
-            <div id="footer__right">
-                <h3>Cóntactenos!</h3>
-                        <p>Direccion:Jacinto Rios 321<br>
-                           Ciudad:Córdoba<br>
-                           CP:5000<br>
-                           Tel:035145565656<br>
-                           Fax: 156532322<br>
-                           Email: denisbikeshop@hotmail.com</p>
-               
-            </div>
-            <div id="footer__left">
-                <h3>Redes Sociales</h3>
-                <img src="./images/index/Redes Sociales.jpg" class="right__img" alt="">
-                
-            </div>
-    
-            <div id="footer__center">
-                <h3>Medios de Pago</h3>
-                <img src="./images/index/Medios de pago.jpg" class="center__img" alt="medios de pago">
-    
-            </div>
-    
+        <div class="container my-5">
 
+        <footer style="background-color: #deded5;">
+            <div class="container p-4">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4" class="footer__contact">
+                  <h5 class="mb-3"  style="letter-spacing: 2px; color: #818963;">Contactenos</h5>
+                  <p class="footer__text">Direccion:Jacinto Rios 321<br>
+                    Ciudad:Córdoba<br>
+                    CP:5000<br>
+                    Tel:035145565656<br>
+                    Fax: 156532322<br>
+                    Email: denisbikeshop@hotmail.com</p>
+                    
+                 </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Medios de Pago</h5>
+                  <img src="./images/index/Medios de pago.jpg" class="center__img" alt="medios de pago">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Redes Sociales</h5>
+                  <img src="./images/index/Redes Sociales 2.PNG" class="right__img" alt="">
+                 </div>
+              </div>
+            </div>
         </footer>
-
     </div>
+
+    
+</div>
 
 
 

@@ -1,8 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    background:#e3ebc7 ;
+}
+
 #cabecera {
 
     background-image: url("../images/index/My\ project\ 1.jpg");
     background-size:cover;
-    height: 100px;
+    height: auto;
     
 }
 
@@ -12,49 +21,34 @@
     padding-top: 60px;
     font-style: oblique;
     font-family: fantasy;
-    font-size: 23px;
+    font-size: 25px;
     color: #29a718;
     
 }
 
-#menu {
-    text-decoration: none;
-    width: 320px;
-}
-
-#menu ul {
-    float: right;
+.nav-item {
+    display: block;
+    float:left;
     align-items: center;
     list-style-type: none;
    
-  
-}
- 
-#menu ul li {
-    display: inline;
-   
-    
+
 }
 
-
-#menu ul li a {
-    text-decoration: none;
-    padding: 5px;
-	border: #b90633 solid 2px;
-    color: rgb(230, 136, 136);
+.nav-link {
+	 color: rgb(206, 87, 87);
 	font-family:fantasy ;
-    font-size: 10px;
-    width: 50px;
+    font-size: 20px;
     
-
 }
 
-#menu ul li a:hover {
-    color: #b90633;
-    background-color: #29a718;
-  
-}
+.nav-link:hover {
 
+        color: #b90633;
+        background-color: #b7d3b3;
+      
+    
+}
 
 #section {
 
@@ -83,13 +77,12 @@
     transform: scale(0.9);
   }
 
-  .tipos__img1 {
-       
-       margin-left:25px;
-  }
   
  .tipos__img1  img {
     width: 250px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
    
 
        
@@ -167,78 +160,26 @@ aside h2 {
               
 }
 
-
-#footer {
-        
-     margin: 1px;
-     padding: 2px;
-     display: inline;;
-}
-
-#footer__left{
-
-    float:right;
-    padding-left: 5px;
-    margin-left:20px;
-    text-align:justify;
-   
-    
-   
-}
-#footer__left h3{ 
-    color: rgb(12, 12, 12);
-    ;
-    font-size: 20px;
-}
-
-#footer__left p{
-    font-style: italic;
-    font-size: 10px;
-    margin: 2px;
-    color:rgb(2, 2, 2);
-
-}
-
-/*Comienzo Medios de Pago*/
-
-
-
-#footer__center h3{
-    color:rgb(2, 2, 2);
-    float: right;
-    font-size: 20px; 
-}
-
 .center__img{
-    width: 150px;
+    width: 200px;
     height: 90px;
-    margin: 5px;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     transition: transform 3s;
+    
 }
 
 .center__img:hover {
     transform: scale(1.15);
 }
 
-/*Comienzo Redes sociales*/
-
-#footer__right{
-    height: 100%;
-    width: 17%;
-    float: left;
-    }
-
-#footer__right h3 {
-    color:rgb(2, 2, 2);
-    font-size: 20px;
-    color: #29a718;
-}
 .right__img{
-    width: 100px;
+    width: 200px;
     height: 50px;
-    margin: 5px;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     transition: transform 5s;
 }
 
@@ -247,3 +188,73 @@ aside h2 {
 
 
 }
+
+h5 {
+    text-align: center;
+}
+
+
+.footer__text {
+    text-align: center;
+}
+/*
+
+*Seccion Nosotros!
+*Se utiliza el mismo stylo para el header, Nav y footer
+
+*/
+
+
+.nosotros__tipos__img1 img {
+    width: 100%;
+
+}
+
+nosotros__tipos__h3{
+    padding-left: 5px;
+    text-align:center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-family: fantasy;
+    font-size: 35px;
+    color: #af9a99;
+
+
+} 
+
+.nosotros__tipos__p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 15px;
+
+
+ }
+.nosotros__tipos__hr {
+    border: 3px solid rgb(177, 79, 79); 
+    border-radius: 300px/10px;
+    height: 0px; 
+    text-align: center;
+    
+}
+
+.nosotros__lista__div{
+ 
+ text-align: center;
+ margin-right: 35px;
+ margin-top: 5px; 
+ 
+
+}
+
+.nosotros__lista__li {
+padding: 15px;
+list-style-type: none;
+
+}    
+
+/*fin stylo pag nosotros*/
+
+
