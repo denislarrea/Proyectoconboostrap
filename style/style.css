@@ -257,4 +257,71 @@ list-style-type: none;
 
 /*fin stylo pag nosotros*/
 
+/*inicio stylo pag bicicletas*/
 
+.tipo__bicicletas img {
+    width: 100%;
+    display:inline-block; 
+
+}
+
+.tipos__bicicletas__hr {
+    border: 2px inset rgb(128, 98, 163);
+    height: 1px;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.tipos__bicicletas__h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tipos__bicicletas__h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+}
+
+/*fin stylo pag Bicicletas*/
+
+/*inicio stylo pag servicios*/
+
+.tipos__service img {
+  
+        width: 100%;
+        display:inline-block; 
+    
+    
+}
+
+.tipos__service__h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tipos__service__hr {
+            border: 0;
+            height: 12px; 
+            box-shadow: inset 0 12px 12px -12px rgb(97, 51, 128);
+        
+         }
+
+.tipos__service__precio {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+
+}
+
+.tipos__service__p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*fin stylo pag Servicios*/
+
+/*inicio stylo pag bicicletas*/
