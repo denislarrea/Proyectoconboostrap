@@ -210,7 +210,7 @@ h5 {
 
 }
 
-nosotros__tipos__h3{
+.nosotros__tipos__h3{
     padding-left: 5px;
     text-align:center;
     font-size: 30px;
@@ -229,6 +229,7 @@ nosotros__tipos__h3{
     font-family: sans-serif;
     text-align: center;
     margin-top: 15px;
+    color: #7C081A;
 
 
  }
@@ -245,6 +246,7 @@ nosotros__tipos__h3{
  text-align: center;
  margin-right: 35px;
  margin-top: 5px; 
+ color: #7C081A;
  
 
 }
@@ -252,6 +254,7 @@ nosotros__tipos__h3{
 .nosotros__lista__li {
 padding: 15px;
 list-style-type: none;
+color: #7C081A;
 
 }    
 
@@ -276,23 +279,50 @@ list-style-type: none;
 .tipos__bicicletas__h3 {
     text-align: center;
     margin-bottom: 10px;
+   color: #7C081A;
 }
+.tipos__bicicletas__h3__precio {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #aaa043;
+    border-radius: 60px;
+    transition: transform 5s;
+       
+        
+}
+
+.tipos__bicicletas__h3__precio:hover {
+
+    transform: scale(1.20);
+    background-color: #29a718;
+}
+
+
 
 .tipos__bicicletas__h4 {
     text-align: center;
     margin-bottom: 10px;
     font-family:'Courier New', Courier, monospace;
-    color: black;
+    color: #7C081A;
 }
 
 /*fin stylo pag Bicicletas*/
 
 /*inicio stylo pag servicios*/
 
+
+
 .tipos__service img {
-  
+        height: 50%;
         width: 100%;
         display:inline-block; 
+        
     
     
 }
@@ -300,6 +330,8 @@ list-style-type: none;
 .tipos__service__h3 {
     text-align: center;
     margin-bottom: 10px;
+    color: #7C081A;
+    
 }
 
 .tipos__service__hr {
@@ -314,12 +346,31 @@ list-style-type: none;
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 25px;
+        width: fit-content;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #aaa043;
+        border-radius: 60px;
+        transition: transform 5s;
+       
+        
+}
+
+.tipos__service__precio:hover {
+
+    background: #29a718;
+    transform: scale(1.20);
 
 }
 
 .tipos__service__p {
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+   
+    margin-top: 5px;
+    color: #7C081A;
 }
 
 /*fin stylo pag Servicios*/
