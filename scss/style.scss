@@ -3,11 +3,28 @@
     padding: 0;
 }
 
+/*utilizando mixin con parametros */
+
+@mixin parametrosmargin {
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+
+@mixin parametrostext {
+    text-align: center;
+    color: $cool-board;
+}
+
+
 /*Variables*/
 
 $title-font: fantasy 25px oblique;
 $cool-green: #29a718;
 $cabecera: url("../images/index/My\ project\ 1.jpg");
+$cool-board: #7C081A;
 
 #body {
     background:#e3ebc7 ;
@@ -41,7 +58,7 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
 }
 
 .nav-link {
-	 color: rgb(206, 87, 87);
+	 color: rgb(212, 99, 99);
 	font-family:$title-font ;
     font-size: 20px;
     &:hover {
@@ -53,6 +70,8 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
 }
 
 
+
+
 #section {
 
     grid-template-columns: repeat (3 1fr);
@@ -61,17 +80,27 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
     padding: 15px;
     color: black;
     }
-    
+
+    /*Aplicando Map-get a la clase tipo*/
+
+  $estilos: (
+    color:#ccc,
+    borde: 2px solid rgb(223, 11, 11),
+    margin: 10px,
+    position: inline-flexbox,
+
+  );
+
 
 .tipo {
 
-    background: #ccc;
-    border: 2px solid rgb(223, 11, 11);
-    display: inline-flexbox;
+    background: map-get($estilos, color);
+    border: map-get($estilos, borde);
+    display: map-get($estilos, position);
     justify-items: auto;
     padding-left: 5px;
     padding-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: map-get($estilos, margin);
     transition: transform 5s;
     &:hover {
 
@@ -94,8 +123,8 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
    }
 
   .tipos__h3{
+    @include parametrostext;
     padding-left: 5px;
-    text-align:center;
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -103,16 +132,16 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
   } 
 
   .tipos__p {
+    @include parametrostext;
     font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align:center;
     margin: 10px;
 
   }
   .tipos__hr {border: 3px solid rgb(177, 79, 79); 
               border-radius: 500px/50px;
               height: 10px; 
-              text-align: center;}
+              @include parametrostext;}
 
  
 .comentarios {
@@ -128,11 +157,10 @@ $cabecera: url("../images/index/My\ project\ 1.jpg");
 }   
 
 aside h2 {
+    @include parametrostext;
+    @include parametrosmargin;
     width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
-    text-align:center;
     font-size: 25px;
     margin-bottom: 10px;
     background: #a58483;
@@ -152,10 +180,10 @@ aside h2 {
 }
 
 .testimonio__personas{
+    @include parametrostext;
     border:dotted ;
     color: rgb(233, 58, 14);
     padding: 10px;
-     text-align: center;
     font-size: 20px;
     font-style: oblique;
     animation-duration: 7s;
@@ -165,12 +193,13 @@ aside h2 {
               
 }
 
+
+
 .center__img{
+    @include parametrosmargin;
+    display: block;
     width: 200px;
     height: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     transition: transform 3s;
     &:hover {
         transform: scale (1.15);
@@ -181,9 +210,8 @@ aside h2 {
 .right__img{
     width: 200px;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+    @include parametrosmargin;
     transition: transform 5s;
     &:hover {
         transform: translate(15px, 15px);
@@ -192,10 +220,282 @@ aside h2 {
 
 
 h5 {
-    text-align: center;
+    @include parametrostext;;
 }
 
 
 .footer__text {
-    text-align: center;
+    @include parametrostext;;
 }
+
+.sectionbtn {
+    @include parametrostext;};
+
+
+/*Utilizando extend*/
+
+.button {
+
+    display: inline-block;
+    background-color: #f1ecec;
+    color: #b90633;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    &:hover {
+        color:#b90633;
+        background-color:#f7a7bb
+    }
+
+}
+
+.button__sig {
+    @extend .button;
+    color: #b90633;
+    &:hover {
+
+        color: #b90633;
+        background-color: #b7d3b3;
+    }
+
+
+}
+
+
+
+  
+      /*Seccion Nosotros!
+      *Se utiliza el mismo stylo para el header, Nav y footer
+      
+      */
+      
+      
+      .nosotros__tipos__img1 img {
+          width: 100%
+      
+      };
+      
+      .nosotros__tipos__h3{
+          @include parametrostext;
+          padding-left: 5px;
+          font-size: 30px;
+          margin-bottom: 10px;
+          font-style: oblique;
+          font-family: fantasy;
+          font-size: 35px;
+          color: #af9a99;
+      
+      
+      } ;
+      
+      .nosotros__tipos__p {
+          margin-top: 10px;
+          font-size: 20px;
+          font-family: sans-serif;
+          @include parametrostext;
+          margin-top: 15px;
+          color: $cool-board;
+      
+      
+       }
+      .nosotros__tipos__hr {
+          border: 3px solid rgb(177, 79, 79); 
+          border-radius: 300px/10px;
+          height: 0px; 
+          text-align: center;
+          
+      }
+      
+      .nosotros__lista__div{
+       
+        @include parametrostext;
+       margin-right: 35px;
+       margin-top: 5px; 
+       
+       
+      
+      }
+      
+      .nosotros__lista__li {
+      padding: 15px;
+      list-style-type: none;
+      color: $cool-board;
+      
+      }    
+      
+      /*fin stylo pag nosotros*/
+      
+      /*inicio stylo pag bicicletas*/
+      
+      .tipo__bicicletas img {
+          width: 100%;
+          display:inline-block; 
+      
+      }
+      
+      .tipos__bicicletas__hr {
+          border: 2px inset rgb(128, 98, 163);
+          height: 1px;
+          width: 80%;
+          margin-left: 50px;
+          margin-bottom: 10px;
+      }
+      
+      .tipos__bicicletas__h3 {
+          @include parametrostext;
+          margin-bottom: 10px;
+        
+      }
+      .tipos__bicicletas__h3__precio {
+          @include parametrosmargin;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 25px;
+          width: fit-content;
+          padding: 10px;
+         
+          background: #aaa043;
+          border-radius: 60px;
+          transition: transform 5s;
+             
+              
+      }
+      
+      .tipos__bicicletas__h3__precio:hover {
+      
+          transform: scale(1.20);
+          background-color: $cool-green;
+      }
+      
+      
+      
+      .tipos__bicicletas__h4 {
+          @include parametrostext;
+          margin-bottom: 10px;
+          font-family:'Courier New', Courier, monospace;
+          
+      }
+      
+      /*fin stylo pag Bicicletas*/
+      
+      /*inicio stylo pag servicios*/
+      
+      
+      
+      .tipos__service img {
+              height: 50%;
+              width: 100%;
+              display:inline-block; 
+              
+          
+          
+      }
+      
+      .tipos__service__h3 {
+          @include parametrostext;
+          margin-bottom: 10px;
+          
+          
+      }
+      
+      .tipos__service__hr {
+                  border: 0;
+                  height: 12px; 
+                  box-shadow: inset 0 12px 12px -12px rgb(97, 51, 128);
+              
+               }
+      
+      .tipos__service__precio {
+              @include parametrosmargin;
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              font-size: 25px;
+              width: fit-content;
+              padding: 10px;
+              background: #aaa043;
+              border-radius: 60px;
+              transition: transform 5s;
+             
+              
+      }
+      
+      .tipos__service__precio:hover {
+      
+          background: $cool-green;
+          transform: scale(1.20);
+      
+      }
+      
+      .tipos__service__p {
+          @include parametrostext;
+          margin-bottom: 10px;
+          font-family: 'Courier New', Courier, monospace;
+          margin-top: 5px;
+         
+      }
+      
+      /*fin stylo pag Servicios*/
+      
+      /*inicio stylo pag contacto
+      Mismo formato header- footer- nav
+      */
+      
+      
+      /* Horarios y mensaje*/
+      .bloque__lista__h2 {
+          font-family:serif;
+          font-size: 40px;
+          color: $cool-board;
+          text-decoration: underline;
+      }
+      .bloque__lista__p {
+          font-family: 'Courier New', Courier, monospace;
+          font-size: large;
+          margin-top: 5px;
+          color: $cool-board;
+          padding-bottom: 10px;
+      }
+
+      /* Formulario*/
+
+#bloque__contacto {
+    @include parametrostext;;
+
+}
+.row  {
+    display: flexbox;
+    justify-content:space-around ;
+}
+
+
+/*Boton enviar*/
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    display: unset;
+    margin-bottom: 10px;
+}
+
+
+button.submit { 
+    padding: 9px 17px;
+    font-family: sans-serif;
+    font-weight: bold; line-height: 1.5; color:black;
+    border: none; text-shadow: 0 5px 5px
+    rgba(25, 25, 25, 0.5);
+    background-image: -moz-linear-gradient(0%
+    100% 90deg, #222, #222);
+    background-color: #fff; border: 1px solid
+    #f1f1f1;
+    border-radius: 10px; box-shadow: 0 1px 2px
+    rgba(0, 0, 0, 0.5);}
+    button.submit:hover { opacity:.80; cursor:pointer; color: #fff; }
+    button.submit:active { border: 1px solid
+    #222;
+    box-shadow: 0 0 10px 5px #444 inset;
+    
+   }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0; }
 
+/*utilizando mixin con parametros */
 /*Variables*/
 #body {
   background: #e3ebc7; }
@@ -27,7 +28,7 @@
   list-style-type: none; }
 
 .nav-link {
-  color: #ce5757;
+  color: #d46363;
   font-family: fantasy 25px oblique;
   font-size: 20px; }
   .nav-link:hover {
@@ -41,6 +42,7 @@
   padding: 15px;
   color: black; }
 
+/*Aplicando Map-get a la clase tipo*/
 .tipo {
   background: #ccc;
   border: 2px solid #df0b0b;
@@ -60,23 +62,26 @@
   display: block; }
 
 .tipos__h3 {
-  padding-left: 5px;
   text-align: center;
+  color: #7C081A;
+  padding-left: 5px;
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 5px; }
 
 .tipos__p {
+  text-align: center;
+  color: #7C081A;
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
   margin: 10px; }
 
 .tipos__hr {
   border: 3px solid #b14f4f;
   border-radius: 500px/50px;
   height: 10px;
-  text-align: center; }
+  text-align: center;
+  color: #7C081A; }
 
 .comentarios {
   grid-area: comentarios;
@@ -88,11 +93,12 @@
   margin-bottom: 20px; }
 
 aside h2 {
-  width: 200px;
+  text-align: center;
+  color: #7C081A;
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
   margin-top: 10px;
-  text-align: center;
   font-size: 25px;
   margin-bottom: 10px;
   background: #a58483;
@@ -106,10 +112,11 @@ aside h2 {
     opacity: 1; } }
 
 .testimonio__personas {
+  text-align: center;
+  color: #7C081A;
   border: dotted;
   color: #e93a0e;
   padding: 10px;
-  text-align: center;
   font-size: 20px;
   font-style: oblique;
   animation-duration: 7s;
@@ -117,11 +124,11 @@ aside h2 {
   animation-iteration-count: infinite; }
 
 .center__img {
-  width: 200px;
-  height: 90px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 200px;
+  height: 90px;
   transition: transform 3s; }
   .center__img:hover {
     transform: scale 1.15; }
@@ -129,15 +136,223 @@ aside h2 {
 .right__img {
   width: 200px;
   height: 50px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   transition: transform 5s; }
   .right__img:hover {
     transform: translate(15px, 15px); }
 
 h5 {
-  text-align: center; }
+  text-align: center;
+  color: #7C081A; }
 
 .footer__text {
+  text-align: center;
+  color: #7C081A; }
+
+.sectionbtn {
+  text-align: center;
+  color: #7C081A; }
+
+/*Utilizando extend*/
+.button, .button__sig {
+  display: inline-block;
+  background-color: #f1ecec;
+  color: #b90633;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  .button:hover, .button__sig:hover {
+    color: #b90633;
+    background-color: #f7a7bb; }
+
+.button__sig {
+  color: #b90633; }
+  .button__sig:hover {
+    color: #b90633;
+    background-color: #b7d3b3; }
+
+/*Seccion Nosotros!
+      *Se utiliza el mismo stylo para el header, Nav y footer
+      
+      */
+.nosotros__tipos__img1 img {
+  width: 100%; }
+
+.nosotros__tipos__h3 {
+  text-align: center;
+  color: #7C081A;
+  padding-left: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-style: oblique;
+  font-family: fantasy;
+  font-size: 35px;
+  color: #af9a99; }
+
+.nosotros__tipos__p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #7C081A;
+  margin-top: 15px;
+  color: #7C081A; }
+
+.nosotros__tipos__hr {
+  border: 3px solid #b14f4f;
+  border-radius: 300px/10px;
+  height: 0px;
   text-align: center; }
+
+.nosotros__lista__div {
+  text-align: center;
+  color: #7C081A;
+  margin-right: 35px;
+  margin-top: 5px; }
+
+.nosotros__lista__li {
+  padding: 15px;
+  list-style-type: none;
+  color: #7C081A; }
+
+/*fin stylo pag nosotros*/
+/*inicio stylo pag bicicletas*/
+.tipo__bicicletas img {
+  width: 100%;
+  display: inline-block; }
+
+.tipos__bicicletas__hr {
+  border: 2px inset #8062a3;
+  height: 1px;
+  width: 80%;
+  margin-left: 50px;
+  margin-bottom: 10px; }
+
+.tipos__bicicletas__h3 {
+  text-align: center;
+  color: #7C081A;
+  margin-bottom: 10px; }
+
+.tipos__bicicletas__h3__precio {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  width: fit-content;
+  padding: 10px;
+  background: #aaa043;
+  border-radius: 60px;
+  transition: transform 5s; }
+
+.tipos__bicicletas__h3__precio:hover {
+  transform: scale(1.2);
+  background-color: #29a718; }
+
+.tipos__bicicletas__h4 {
+  text-align: center;
+  color: #7C081A;
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace; }
+
+/*fin stylo pag Bicicletas*/
+/*inicio stylo pag servicios*/
+.tipos__service img {
+  height: 50%;
+  width: 100%;
+  display: inline-block; }
+
+.tipos__service__h3 {
+  text-align: center;
+  color: #7C081A;
+  margin-bottom: 10px; }
+
+.tipos__service__hr {
+  border: 0;
+  height: 12px;
+  box-shadow: inset 0 12px 12px -12px #613380; }
+
+.tipos__service__precio {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  width: fit-content;
+  padding: 10px;
+  background: #aaa043;
+  border-radius: 60px;
+  transition: transform 5s; }
+
+.tipos__service__precio:hover {
+  background: #29a718;
+  transform: scale(1.2); }
+
+.tipos__service__p {
+  text-align: center;
+  color: #7C081A;
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5px; }
+
+/*fin stylo pag Servicios*/
+/*inicio stylo pag contacto
+      Mismo formato header- footer- nav
+      */
+/* Horarios y mensaje*/
+.bloque__lista__h2 {
+  font-family: serif;
+  font-size: 40px;
+  color: #7C081A;
+  text-decoration: underline; }
+
+.bloque__lista__p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  margin-top: 5px;
+  color: #7C081A;
+  padding-bottom: 10px; }
+
+/* Formulario*/
+#bloque__contacto {
+  text-align: center;
+  color: #7C081A; }
+
+.row {
+  display: flexbox;
+  justify-content: space-around; }
+
+/*Boton enviar*/
+.col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  display: unset;
+  margin-bottom: 10px; }
+
+button.submit {
+  padding: 9px 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: black;
+  border: none;
+  text-shadow: 0 5px 5px rgba(25, 25, 25, 0.5);
+  background-image: -moz-linear-gradient(0% 100% 90deg, #222, #222);
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+
+button.submit:hover {
+  opacity: .80;
+  cursor: pointer;
+  color: #fff; }
+
+button.submit:active {
+  border: 1px solid #222;
+  box-shadow: 0 0 10px 5px #444 inset; }
