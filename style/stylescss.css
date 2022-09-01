@@ -15,11 +15,11 @@
 
 #cabecera h1 {
   margin-bottom: 2px;
-  text-align: left;
+  text-align: center;
   padding-top: 60px;
-  font: fantasy 25px oblique;
+  font: fantasy 30px oblique;
   /*Variable cabecera*/
-  color: #29a718; }
+  color: #13b90a; }
 
 .nav-item {
   display: block;
@@ -29,7 +29,7 @@
 
 .nav-link {
   color: #d46363;
-  font-family: fantasy 25px oblique;
+  font-family: fantasy 30px oblique;
   font-size: 20px; }
   .nav-link:hover {
     color: #b90633;
@@ -156,11 +156,14 @@ h5 {
   color: #7C081A; }
 
 /*Utilizando extend*/
+.sectionbtn {
+  text-align-last: right; }
+
 .button, .button__sig {
   display: inline-block;
   background-color: #f1ecec;
   color: #b90633;
-  font-size: 20px;
+  font-size: 10px;
   border-radius: 10px;
   padding: 5px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
@@ -178,6 +181,15 @@ h5 {
       *Se utiliza el mismo stylo para el header, Nav y footer
       
       */
+.nosotros__tipos__img1 {
+  animation: movimiento 10s infinite; }
+
+@keyframes movimiento {
+  from {
+    position: bottom left; }
+  to {
+    position: bottom right; } }
+
 .nosotros__tipos__img1 img {
   width: 100%; }
 
@@ -251,7 +263,7 @@ h5 {
 
 .tipos__bicicletas__h3__precio:hover {
   transform: scale(1.2);
-  background-color: #29a718; }
+  background-color: #13b90a; }
 
 .tipos__bicicletas__h4 {
   text-align: center;
@@ -290,7 +302,7 @@ h5 {
   transition: transform 5s; }
 
 .tipos__service__precio:hover {
-  background: #29a718;
+  background: #13b90a;
   transform: scale(1.2); }
 
 .tipos__service__p {
