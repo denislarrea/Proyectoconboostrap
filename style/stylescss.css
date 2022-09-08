@@ -21,15 +21,18 @@
   /*Variable cabecera*/
   color: #13b90a; }
 
+.nav {
+  margin-bottom: 27px; }
+
 .nav-item {
   display: block;
   float: left;
   align-items: center;
   list-style-type: none;
-  margin: 10px;
+  margin: 5px;
+  padding: 5px;
   background-color: #34495e;
-  border-radius: 8px;
-  font-size: 0; }
+  border-radius: 8px; }
 
 .nav-link {
   color: #d46363;
