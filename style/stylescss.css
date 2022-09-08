@@ -347,7 +347,8 @@ h5 {
 /* Formulario*/
 #bloque__contacto {
   text-align: center;
-  color: #7C081A; }
+  color: #7C081A;
+  margin: auto; }
 
 .row {
   display: flexbox;

@@ -500,7 +500,8 @@ h5 {
       /* Formulario*/
 
 #bloque__contacto {
-    @include parametrostext;;
+    @include parametrostext;
+    margin: auto;
 
 }
 .row  {
