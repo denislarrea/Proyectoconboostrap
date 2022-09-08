@@ -348,7 +348,7 @@ h5 {
 #bloque__contacto {
   text-align: center;
   color: #7C081A;
-  margin: auto; }
+  margin-top: 15px; }
 
 .row {
   display: flexbox;
