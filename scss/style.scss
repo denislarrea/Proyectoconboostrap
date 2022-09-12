@@ -21,7 +21,7 @@
 
 /*Variables*/
 
-$title-font: fantasy 30px bold;
+$title-font: fantasy 30px;
 $cool-green:#13b90a;
 $cabecera: url("../images/index/My\ project\ 1.jpg");
 $cool-board: #7C081A;
@@ -61,11 +61,14 @@ $cool-board: #7C081A;
 .nav-link {
 	 color: rgb(212, 99, 99);
 	font-family:$title-font ;
+    font-weight: bold;
     font-size: 20px;
     &:hover {
 
         color: #b90633;
         background-color: #b7d3b3;
+        border-radius: 10px;
+
     }
     
 }

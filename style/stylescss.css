@@ -17,7 +17,7 @@
   margin-bottom: 2px;
   text-align: left;
   padding-top: 60px;
-  font: fantasy 30px bold;
+  font: fantasy 30px;
   /*Variable cabecera*/
   color: #13b90a; }
 
@@ -29,11 +29,13 @@
 
 .nav-link {
   color: #d46363;
-  font-family: fantasy 30px bold;
+  font-family: fantasy 30px;
+  font-weight: bold;
   font-size: 20px; }
   .nav-link:hover {
     color: #b90633;
-    background-color: #b7d3b3; }
+    background-color: #b7d3b3;
+    border-radius: 10px; }
 
 #section {
   grid-template-columns: repeat 3 1fr;
