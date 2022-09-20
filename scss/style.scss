@@ -49,11 +49,22 @@ $cool-board: #7C081A;
     
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b69db26ff9717c17b74c7298b217cebc26defbd
 .nav-item {
     display: block;
     float:left;
     align-items: center;
     list-style-type: none;
+<<<<<<< HEAD
+=======
+   	background-color: #34495e;
+	border-radius: 8px;
+	margin: 10px;
+    
+>>>>>>> 4b69db26ff9717c17b74c7298b217cebc26defbd
    
 
 }
@@ -62,6 +73,7 @@ $cool-board: #7C081A;
 	 color: rgb(212, 99, 99);
 	font-family:$title-font ;
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 20px;
     &:hover {
 
@@ -69,6 +81,14 @@ $cool-board: #7C081A;
         background-color: #34495e;
         border-radius: 10px;
 
+=======
+    
+    &:hover {
+
+        color: #b90633;
+        background-color: #b7d3b3;
+        
+>>>>>>> 4b69db26ff9717c17b74c7298b217cebc26defbd
     }
     
 }
@@ -500,7 +520,8 @@ h5 {
       /* Formulario*/
 
 #bloque__contacto {
-    @include parametrostext;;
+    @include parametrostext;
+    margin-top: 15px;
 
 }
 .row  {

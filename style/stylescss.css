@@ -25,6 +25,7 @@
   display: block;
   float: left;
   align-items: center;
+<<<<<<< HEAD
   list-style-type: none; }
 
 .nav-link {
@@ -36,6 +37,21 @@
     color: #f0e4e7;
     background-color: #34495e;
     border-radius: 10px; }
+=======
+  list-style-type: none;
+  background-color: #34495e;
+  border-radius: 8px;
+  margin: 10px; }
+
+.nav-link {
+  color: #d46363;
+  font-family: fantasy 30px bold;
+  font-size: 20px;
+  font-weight: bold; }
+  .nav-link:hover {
+    color: #b90633;
+    background-color: #b7d3b3; }
+>>>>>>> 4b69db26ff9717c17b74c7298b217cebc26defbd
 
 #section {
   grid-template-columns: repeat 3 1fr;
@@ -346,7 +362,8 @@ h5 {
 /* Formulario*/
 #bloque__contacto {
   text-align: center;
-  color: #7C081A; }
+  color: #7C081A;
+  margin-top: 15px; }
 
 .row {
   display: flexbox;
