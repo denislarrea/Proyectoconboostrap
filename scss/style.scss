@@ -65,8 +65,8 @@ $cool-board: #7C081A;
     font-size: 20px;
     &:hover {
 
-        color: #b90633;
-        background-color: #b7d3b3;
+        color: #f0e4e7;
+        background-color: #34495e;
         border-radius: 10px;
 
     }
@@ -233,7 +233,8 @@ h5 {
 }
 
 .sectionbtn {
-    @include parametrostext;};
+    @include parametrostext;}
+
 
 
 /*Utilizando extend*/
@@ -242,10 +243,14 @@ h5 {
 .sectionbtn {
 
     text-align-last: right;
+    list-style-type: none;
+    
+    
+    
 }
 
 .button {
-
+   
     display: inline-block;
     background-color: #f1ecec;
     color: #b90633;
@@ -255,7 +260,8 @@ h5 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     &:hover {
         color:#b90633;
-        background-color:#f7a7bb
+        background-color:#6e7d8b;
+       
     }
 
 }
@@ -263,10 +269,11 @@ h5 {
 .button__sig {
     @extend .button;
     color: #b90633;
+    
     &:hover {
 
-        color: #b90633;
-        background-color: #b7d3b3;
+        color: #e7e0e2;
+        background-color: #6e7d8b;
     }
 
 
